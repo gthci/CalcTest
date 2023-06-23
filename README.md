@@ -1,19 +1,18 @@
-name: Check Style
-on: push
+# Calculator
 
-jobs:
-  check-style:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
+This is a simple calculator program written in Python. It can perform basic mathematical operations such as addition, subtraction, multiplication, and division.
 
-      - name: Setup python
-        uses: actions/setup-python@v2
-        with:
-          python-version: 3.11.3
+## Features
 
-      - name: Install tools
-        run: python -m pip install --upgrade pip pycodestyle
+- User-friendly interface
+- Supports both whole numbers and decimals
+- Handles basic arithmetic operations efficiently
 
-      - name: Check Style
-        run: pycodestyle --first *.py
+## Usage
+
+1. Run the calculator.py script.
+2. Enter the numbers and the desired operation.
+3. Get the result instantly!
+
+Feel free to contribute and enhance the calculator program.
+
